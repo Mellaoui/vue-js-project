@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="bg-blue-100" id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -19,6 +19,13 @@
 
 #nav {
   padding: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 226, 156, 1) 0%,
+    rgba(9, 166, 156, 1) 47%,
+    rgba(0, 174, 255, 1) 100%
+  );
 }
 
 #nav a {
