@@ -1,39 +1,12 @@
 <template>
   <div class="bg-blue-100" id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="nav" class="flex justify-around py-6 bg-gray-300">
+      <router-link class="px-12" to="/">Home</router-link>
+      <router-link class="px-12" to="/about">About</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 226, 156, 1) 0%,
-    rgba(9, 166, 156, 1) 47%,
-    rgba(0, 174, 255, 1) 100%
-  );
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
