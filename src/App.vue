@@ -1,18 +1,16 @@
 <template>
   <div class="bg-blue-100" id="app">
     <div id="nav" class="flex justify-around py-6 bg-gray-300">
-      <router-link class="px-12 text-white sm:hidden md:hidden lg:block" to="/"
+      <router-link class="hidden px-12 text-white sm:hidden lg:block" to="/"
         >Home</router-link
       >
       <div class="px-12 text-white" to="/"></div>
       <router-link
-        class="px-12 text-white md:block lg:hidden sm:hidden"
+        class="hidden px-12 text-white sm:block lg:hidden"
         to="/about"
         >logout</router-link
       >
-      <router-link
-        class="px-12 text-white sm:hidden md:hidden lg:block"
-        to="/about"
+      <router-link class="hidden px-12 text-white lg:block" to="/about"
         >About</router-link
       >
     </div>
