@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-100" id="app">
+  <div class="h-screen bg-blue-100" id="app">
     <div id="nav" class="fixed top-0 z-10 flex w-screen py-3 bg-gray-300">
       <div id="desktop-navigation" class="justify-around hidden w-full lg:flex">
         <router-link class="hidden px-12 text-white sm:hidden lg:block" to="/"
@@ -51,19 +51,7 @@
     >
       <div class="relative flex justify-center w-full">
         <div
-          class="
-            absolute
-            flex flex-col
-            items-center
-            w-10/12
-            px-3
-            py-3
-            bg-gray-800
-            sm:max-w-md
-            rounded-3xl
-            top-4
-            gap-y-3
-          "
+          class="absolute flex flex-col items-center w-10/12 px-3 py-3 bg-gray-800 sm:max-w-md rounded-3xl top-4 gap-y-3"
         >
           <router-link class="py-4 text-sm text-center text-gray-200" to=""
             >Dashboard</router-link
