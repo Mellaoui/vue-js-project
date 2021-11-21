@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-blue-100" id="app">
+  <div class="min-h-screen bg-blue-100" id="app">
     <div id="nav" class="fixed top-0 z-10 flex w-screen py-3 bg-gray-300">
       <div id="desktop-navigation" class="justify-around hidden w-full lg:flex">
         <router-link class="hidden px-12 text-white sm:hidden lg:block" to="/"

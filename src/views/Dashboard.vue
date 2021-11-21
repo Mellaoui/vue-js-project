@@ -54,7 +54,7 @@
 
       <div
         id="production-mobile"
-        class="inline-block w-full text-left sm:relative md:hidden"
+        class="flex flex-col items-center w-full my-2 sm:relative md:hidden"
       >
         <div class="flex justify-center w-full">
           <button
@@ -94,7 +94,7 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          class="relative right-0 grid justify-center grid-cols-2 my-4 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="grid w-10/12 grid-cols-2 gap-3 my-4"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -133,7 +133,7 @@
         </div>
       </div>
 
-      <div class="hidden h-1 bg-gray-300 rounded-full md:flex lg:hidden"></div>
+      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden">
 
       <div id="hr" class="hidden w-full p-3 sm:flex sm:flex-col my gap-y-6">
         <h3 class="text-base">HR</h3>
@@ -167,18 +167,18 @@
 
       <div
         id="hr-mobile"
-        class="inline-block w-full text-left sm:relative md:hidden"
+        class="flex flex-col items-center w-full sm:relative md:hidden"
       >
-        <div class="flex justify-center w-full my-2">
+        <div class="flex justify-center w-full">
           <button
-            @click="hr_menu = !hr_menu"
             type="button"
+            @click="hr_menu = !hr_menu"
             class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
           >
-            HR
+            Human Resources
             <!-- Heroicon name: solid/chevron-down -->
             <svg
               class="w-5 h-5 ml-2 -mr-1"
@@ -207,50 +207,38 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          v-show="hr_menu"
-          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="grid w-10/12 grid-cols-2 gap-3 my-4"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabindex="-1"
+          v-show="hr_menu"
         >
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-              >Account settings</a
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-2xl"
             >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              >Support</a
+              <img src="@/assets/icons/clock.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">My Hours</div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-2xl"
             >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-2"
-              >License</a
+              <img src="@/assets/icons/calendar.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">Book Leave</div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-2xl"
             >
-            <form method="POST" action="#" role="none">
-              <button
-                type="submit"
-                class="block w-full px-4 py-2 text-sm text-left text-gray-700"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-3"
-              >
-                Sign out
-              </button>
-            </form>
+              <img src="@/assets/icons/resume.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">My Details</div>
           </div>
         </div>
       </div>
@@ -286,20 +274,20 @@
         </div>
       </div>
 
-      <div
-        id="goods-management-mobile"
-        class="inline-block w-full text-left sm:relative md:hidden"
+     <div
+        id="goods-mobile"
+        class="flex flex-col items-center w-full sm:relative md:hidden"
       >
         <div class="flex justify-center w-full">
           <button
-            @click="goods_menu = !goods_menu"
             type="button"
+            @click="goods_menu = !goods_menu"
             class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
           >
-            Goods Managment
+            Goods Management
             <!-- Heroicon name: solid/chevron-down -->
             <svg
               class="w-5 h-5 ml-2 -mr-1"
@@ -328,55 +316,41 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          v-show="goods_menu"
-          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="grid w-10/12 grid-cols-2 gap-3 my-4"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabindex="-1"
+          v-show="goods_menu"
         >
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-              >Account settings</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              >Support</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-2"
-              >License</a
-            >
-            <form method="POST" action="#" role="none">
-              <button
-                type="submit"
-                class="block w-full px-4 py-2 text-sm text-left text-gray-700"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-3"
-              >
-                Sign out
-              </button>
-            </form>
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+            ></div>
+            <div class="text-sm text-center w-14">Goods In</div>
           </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
+            ></div>
+            <div class="text-sm text-center w-14">Kitting</div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+            >
+              <img src="@/assets/icons/correct.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">Issue Goods</div>
+          </div>
+        
         </div>
+      
       </div>
 
-      <div class="hidden h-1 bg-gray-300 rounded-full md:flex lg:hidden"></div>
+      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden">
 
       <div
         id="stock-management"
@@ -412,13 +386,13 @@
       </div>
 
       <div
-        id="stock-management-mobile"
-        class="inline-block w-full text-left sm:relative md:hidden"
+        id="stock-mobile"
+        class="flex flex-col items-center w-full my-2 sm:relative md:hidden"
       >
-        <div class="flex justify-center w-full my-2">
+        <div class="flex justify-center w-full">
           <button
-            @click="stock_menu = !stock_menu"
             type="button"
+            @click="stock_menu = !stock_menu"
             class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
@@ -453,51 +427,40 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          v-show="stock_menu"
-          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="grid w-10/12 grid-cols-2 gap-3 my-4"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabindex="-1"
+          v-show="stock_menu"
         >
-          <div class="grid grid-rows-2 py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-0"
-              >Account settings</a
+          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+          
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-1"
-              >Support</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabindex="-1"
-              id="menu-item-2"
-              >License</a
-            >
-            <form method="POST" action="#" role="none">
-              <button
-                type="submit"
-                class="block w-full px-4 py-2 text-sm text-left text-gray-700"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-3"
-              >
-                Sign out
-              </button>
-            </form>
+              <img src="@/assets/icons/checklist.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">Stock Take</div>
           </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+            >
+              <img src="@/assets/icons/forklift.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">Stock Move</div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <div
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+            >
+              <img src="@/assets/icons/approved.png" alt="" />
+            </div>
+            <div class="text-sm text-center w-14">Stock Check</div>
+          </div>
+        
         </div>
       </div>
     </div>
