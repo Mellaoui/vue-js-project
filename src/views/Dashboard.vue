@@ -23,14 +23,16 @@
             <div
               class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
-              <!-- img here -->
+              <img src="@/assets/icons/icons8-view-64.png"/>
             </div>
             <div class="text-sm text-center w-14">Stock Search</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
               class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            ></div>
+            >
+              <img src="@/assets/icons/icons8-sorting-64.png" alt="">
+            </div>
             <div class="text-sm text-center w-14">Part Finder</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
@@ -110,12 +112,14 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div class="w-20 h-20 p-3 bg-gray-100 rounded-2xl">
-              <!-- img here -->
+             <img src="@/assets/icons/icons8-view-64.png" />
             </div>
             <div class="text-sm text-center w-14">Stock Search</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
-            <div class="w-20 h-20 bg-gray-100 rounded-2xl"></div>
+            <div class="w-20 h-20 bg-gray-100 rounded-2xl">
+              <img src="@/assets/icons/icons8-sorting-64.png" alt="" />
+            </div>
             <div class="text-sm text-center w-14">Part Finder</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
