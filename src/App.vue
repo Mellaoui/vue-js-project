@@ -51,7 +51,7 @@
     >
       <div class="relative flex justify-center w-full">
         <div
-          class="absolute flex flex-col items-center w-10/12 px-3 py-3 bg-gray-800  sm:max-w-md rounded-3xl top-4 gap-y-3"
+          class="absolute flex flex-col items-center w-10/12 px-3 py-3 bg-gray-800 sm:max-w-md rounded-3xl top-4 gap-y-3"
         >
           <router-link class="py-4 text-sm text-center text-gray-200" to=""
             >Dashboard</router-link

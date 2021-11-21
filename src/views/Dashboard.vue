@@ -1,12 +1,6 @@
 <template>
   <div
-    class="
-      justify-center
-      pt-20
-      md:flex md:flex-col
-      lg:flex-row lg:h-screen
-      md:justify-evenly
-    "
+    class="justify-center pt-20 md:flex md:flex-col lg:flex-row lg:h-screen md:justify-evenly"
   >
     <div class="flex flex-col items-center w-full my-3 lg:w-1/3">
       <div
@@ -15,27 +9,11 @@
       >
         <h3 class="text-base">Production</h3>
         <div
-          class="
-            grid
-            md:pl-12
-            lg:pl-2
-            md:gap-24
-            lg:gap-3
-            md:grid-cols-5
-            lg:grid-cols-3
-          "
+          class="grid md:pl-12 lg:pl-2 md:gap-24 lg:gap-3 md:grid-cols-5 lg:grid-cols-3"
         >
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-red-400
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
             >
               <img src="@/assets/icons/barcode-reader.png" alt="" />
             </div>
@@ -43,15 +21,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <!-- img here -->
             </div>
@@ -59,29 +29,13 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             ></div>
             <div class="text-sm text-center w-14">Part Finder</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/labels.png" alt="" />
             </div>
@@ -89,15 +43,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/shipped.png" alt="" />
             </div>
@@ -108,31 +54,13 @@
 
       <div
         id="production-mobile"
-        class="inline-block w-2/3 pl-6 text-left sm:relative md:hidden"
+        class="inline-block w-full text-left sm:relative md:hidden"
       >
         <div class="flex justify-center w-full">
           <button
             type="button"
-            class="
-              inline-flex
-              justify-between
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-gray-700
-              bg-white
-              border border-gray-300
-              shadow-sm
-              rounded-2xl
-              w-80
-              hover:bg-gray-50
-              focus:outline-none
-              focus:ring-2
-              focus:ring-offset-2
-              focus:ring-offset-gray-100
-              focus:ring-indigo-500
-            "
+            @click="production_menu = !production_menu"
+            class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -166,21 +94,12 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          class="
-            relative
-            right-0
-            grid
-            justify-center
-            grid-cols-2
-            my-4
-            origin-top-righ
-            ring-1 ring-black ring-opacity-5
-            focus:outline-none
-          "
+          class="relative right-0 grid justify-center grid-cols-2 my-4 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabindex="-1"
+          v-show="production_menu"
         >
           <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
           <div class="flex flex-col items-center gap-y-2">
@@ -221,15 +140,7 @@
         <div class="grid grid-cols-3 gap-3">
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/clock.png" alt="" />
             </div>
@@ -237,15 +148,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/calendar.png" alt="" />
             </div>
@@ -253,15 +156,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/resume.png" alt="" />
             </div>
@@ -272,31 +167,13 @@
 
       <div
         id="hr-mobile"
-        class="inline-block w-full pl-6 text-left sm:relative md:hidden"
+        class="inline-block w-full text-left sm:relative md:hidden"
       >
-        <div class="flex justify-center w-full">
+        <div class="flex justify-center w-full my-2">
           <button
+            @click="hr_menu = !hr_menu"
             type="button"
-            class="
-              inline-flex
-              justify-between
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-gray-700
-              bg-white
-              border border-gray-300
-              shadow-sm
-              rounded-2xl
-              w-80
-              hover:bg-gray-50
-              focus:outline-none
-              focus:ring-2
-              focus:ring-offset-2
-              focus:ring-offset-gray-100
-              focus:ring-indigo-500
-            "
+            class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -330,16 +207,8 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          class="
-            relative
-            right-0
-            flex
-            justify-center
-            mt-2
-            origin-top-righ
-            ring-1 ring-black ring-opacity-5
-            focus:outline-none
-          "
+          v-show="hr_menu"
+          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -396,43 +265,19 @@
         <div class="grid grid-cols-3 gap-3">
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             ></div>
             <div class="text-sm text-center w-14">Goods In</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-blue-500
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
             ></div>
             <div class="text-sm text-center w-14">Kitting</div>
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/correct.png" alt="" />
             </div>
@@ -440,33 +285,16 @@
           </div>
         </div>
       </div>
+
       <div
         id="goods-management-mobile"
-        class="inline-block w-full pl-6 text-left sm:relative md:hidden"
+        class="inline-block w-full text-left sm:relative md:hidden"
       >
         <div class="flex justify-center w-full">
           <button
+            @click="goods_menu = !goods_menu"
             type="button"
-            class="
-              inline-flex
-              justify-between
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-gray-700
-              bg-white
-              border border-gray-300
-              shadow-sm
-              rounded-2xl
-              w-80
-              hover:bg-gray-50
-              focus:outline-none
-              focus:ring-2
-              focus:ring-offset-2
-              focus:ring-offset-gray-100
-              focus:ring-indigo-500
-            "
+            class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -500,16 +328,8 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          class="
-            relative
-            right-0
-            flex
-            justify-center
-            mt-2
-            origin-top-righ
-            ring-1 ring-black ring-opacity-5
-            focus:outline-none
-          "
+          v-show="goods_menu"
+          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -566,15 +386,7 @@
         <div class="grid grid-cols-3 gap-3">
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/checklist.png" alt="" />
             </div>
@@ -582,15 +394,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/forklift.png" alt="" />
             </div>
@@ -598,15 +402,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                w-24
-                h-24
-                bg-gray-100
-                rounded-2xl
-              "
+              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
             >
               <img src="@/assets/icons/approved.png" alt="" />
             </div>
@@ -614,33 +410,16 @@
           </div>
         </div>
       </div>
+
       <div
         id="stock-management-mobile"
-        class="inline-block w-full pl-6 text-left sm:relative md:hidden"
+        class="inline-block w-full text-left sm:relative md:hidden"
       >
-        <div class="flex justify-center w-full">
+        <div class="flex justify-center w-full my-2">
           <button
+            @click="stock_menu = !stock_menu"
             type="button"
-            class="
-              inline-flex
-              justify-between
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-gray-700
-              bg-white
-              border border-gray-300
-              shadow-sm
-              rounded-2xl
-              w-80
-              hover:bg-gray-50
-              focus:outline-none
-              focus:ring-2
-              focus:ring-offset-2
-              focus:ring-offset-gray-100
-              focus:ring-indigo-500
-            "
+            class="inline-flex justify-between px-4 py-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 shadow-sm rounded-2xl w-80 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -674,16 +453,8 @@
       To: "transform opacity-0 scale-95"
   -->
         <div
-          class="
-            relative
-            right-0
-            flex
-            justify-center
-            mt-2
-            origin-top-righ
-            ring-1 ring-black ring-opacity-5
-            focus:outline-none
-          "
+          v-show="stock_menu"
+          class="relative right-0 flex justify-center mt-2 origin-top-righ ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -758,5 +529,13 @@ input:checked ~ .tab-content {
 export default {
   name: "Dashboard",
   components: {},
+  data: function () {
+    return {
+      production_menu: false,
+      hr_menu: false,
+      goods_menu: false,
+      stock_menu: false,
+    };
+  },
 };
 </script>
