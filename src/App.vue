@@ -23,7 +23,7 @@
         <button class="w-10 h-10" @click="dropdown = !dropdown">
           <svg
             class="w-full h-full"
-            fill="currentColor"
+            fill="white"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >

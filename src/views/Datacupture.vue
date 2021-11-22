@@ -4,7 +4,7 @@
       class="flex flex-col items-center h-auto pt-24 pb-24 bg-blue-200 sm:h-screen"
     >
       <div
-        class="inline-flex w-full h-10 px-4 pt-2 text-sm leading-none text-gray-600 bg-white rounded-full shadow justify-evenly sm:items-center sm:w-2/3 text-teal"
+        class="inline-flex w-full h-10 px-4 pt-2 text-sm leading-none text-gray-600 bg-white rounded-full shadow sm:hidden justify-evenly sm:items-center sm:w-2/3 text-teal"
       >
         <div><p class="font-medium">Active</p></div>
         <div><p>Active</p></div>
@@ -35,8 +35,8 @@
           </div>
         </router-link>
       </div>
-      <div class="flex flex-col h-full pt-4 w-60 sm:flex-row">
-        <div class="w-full sm:w-1/2">
+      <div class="flex flex-col w-full h-full px-5 pt-4 justify-evenly sm:flex-row">
+        <div class="w-full">
           <p class="hidden font-bold sm:block">Active Work</p>
           <div class="flex flex-col mr-4 bg-white h-80">
             <p class="pl-2 text-sm font-medium">Route:HFG3241 5181</p>
@@ -51,12 +51,12 @@
               <div>3</div>
               <div>4</div>
             </div>
-            <hr class="w-11/12 pl-3 bg-gray-200 rounded-full" />
+            <hr class="pl-3 bg-gray-200 rounded-full" />
           </div>
         </div>
 
-        <div class="hidden w-1/2 h-full sm:block">
-          <p class="font-bold">Active Work</p>
+        <div class="hidden w-full h-full sm:block">
+          <p class="font-bold">Scheduled Work</p>
           <div class="flex flex-col bg-white h-80">
             <div class="h-full"></div>
           </div>
