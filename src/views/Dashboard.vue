@@ -11,7 +11,7 @@
         <div
           class="grid md:pl-12 lg:pl-2 md:gap-24 lg:gap-3 md:grid-cols-5 lg:grid-cols-3"
         >
-          <router-link to="/datacupture">
+          <router-link to="/datacapture">
             <div class="flex flex-col items-center gap-y-2">
               <div
                 class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
