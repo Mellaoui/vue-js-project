@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
+import Datacupture from "../views/Datacupture";
 
 Vue.use(VueRouter);
 
@@ -11,9 +12,9 @@ const routes = [
     component: Dashboard,
   },
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard,
+    path: "/datacupture",
+    name: "datacupture",
+    component: Datacupture,
   },
   {
     path: "/about",

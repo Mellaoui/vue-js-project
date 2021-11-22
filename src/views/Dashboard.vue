@@ -11,46 +11,56 @@
         <div
           class="grid md:pl-12 lg:pl-2 md:gap-24 lg:gap-3 md:grid-cols-5 lg:grid-cols-3"
         >
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
-            >
-              <img src="@/assets/icons/barcode-reader.png" alt="" />
+          <router-link to="/datacupture">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
+              >
+                <img src="@/assets/icons/barcode-reader.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Data Capture</div>
             </div>
-            <div class="text-sm text-center w-14">Data Capture</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/icons8-view-64.png"/>
+          </router-link>
+          <router-link to="/">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/icons8-view-64.png" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Search</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Search</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/icons8-sorting-64.png" alt="">
+          </router-link>
+          <router-link to="/">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/icons8-sorting-64.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Part Finder</div>
             </div>
-            <div class="text-sm text-center w-14">Part Finder</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/labels.png" alt="" />
+          </router-link>
+          <router-link to="/">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/labels.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Label Printing</div>
             </div>
-            <div class="text-sm text-center w-14">Label Printing</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/shipped.png" alt="" />
+          </router-link>
+          <router-link to="/">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/shipped.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Request Delivery</div>
             </div>
-            <div class="text-sm text-center w-14">Request Delivery</div>
-          </div>
+          </router-link>
         </div>
       </div>
 
@@ -112,7 +122,7 @@
           </div>
           <div class="flex flex-col items-center gap-y-2">
             <div class="w-20 h-20 p-3 bg-gray-100 rounded-2xl">
-             <img src="@/assets/icons/icons8-view-64.png" />
+              <img src="@/assets/icons/icons8-view-64.png" />
             </div>
             <div class="text-sm text-center w-14">Stock Search</div>
           </div>
@@ -137,35 +147,41 @@
         </div>
       </div>
 
-      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden">
+      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden" />
 
       <div id="hr" class="hidden w-full p-3 sm:flex sm:flex-col my gap-y-6">
         <h3 class="text-base">HR</h3>
         <div class="grid grid-cols-3 gap-3">
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/clock.png" alt="" />
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/clock.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">My Hours</div>
             </div>
-            <div class="text-sm text-center w-14">My Hours</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/calendar.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/calendar.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Book Leave</div>
             </div>
-            <div class="text-sm text-center w-14">Book Leave</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/resume.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/resume.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">My Details</div>
             </div>
-            <div class="text-sm text-center w-14">My Details</div>
-          </div>
+          </router-link>
         </div>
       </div>
 
@@ -219,7 +235,7 @@
           v-show="hr_menu"
         >
           <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-          
+
           <div class="flex flex-col items-center gap-y-2">
             <div
               class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-2xl"
@@ -255,30 +271,36 @@
       >
         <h3 class="text-base">Goods Management</h3>
         <div class="grid grid-cols-3 gap-3">
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            ></div>
-            <div class="text-sm text-center w-14">Goods In</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
-            ></div>
-            <div class="text-sm text-center w-14">Kitting</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/correct.png" alt="" />
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              ></div>
+              <div class="text-sm text-center w-14">Goods In</div>
             </div>
-            <div class="text-sm text-center w-14">Issue Goods</div>
-          </div>
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
+              ></div>
+              <div class="text-sm text-center w-14">Kitting</div>
+            </div>
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/correct.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Issue Goods</div>
+            </div>
+          </router-link>
         </div>
       </div>
 
-     <div
+      <div
         id="goods-mobile"
         class="flex flex-col items-center w-full sm:relative md:hidden"
       >
@@ -328,33 +350,36 @@
           v-show="goods_menu"
         >
           <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-          
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            ></div>
-            <div class="text-sm text-center w-14">Goods In</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
-            ></div>
-            <div class="text-sm text-center w-14">Kitting</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/correct.png" alt="" />
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              ></div>
+              <div class="text-sm text-center w-14">Goods In</div>
             </div>
-            <div class="text-sm text-center w-14">Issue Goods</div>
-          </div>
-        
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-blue-500 rounded-2xl"
+              ></div>
+              <div class="text-sm text-center w-14">Kitting</div>
+            </div>
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/correct.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Issue Goods</div>
+            </div>
+          </router-link>
         </div>
-      
       </div>
 
-      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden">
+      <hr class="hidden w-10/12 bg-gray-300 rounded-full md:flex lg:hidden" />
 
       <div
         id="stock-management"
@@ -362,30 +387,36 @@
       >
         <h3 class="text-base">Stock Management</h3>
         <div class="grid grid-cols-3 gap-3">
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/checklist.png" alt="" />
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/checklist.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Take</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Take</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/forklift.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/forklift.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Move</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Move</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/approved.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/approved.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Check</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Check</div>
-          </div>
+          </router-link>
         </div>
       </div>
 
@@ -439,32 +470,36 @@
           v-show="stock_menu"
         >
           <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-          
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/checklist.png" alt="" />
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/checklist.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Take</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Take</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/forklift.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/forklift.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Move</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Move</div>
-          </div>
-          <div class="flex flex-col items-center gap-y-2">
-            <div
-              class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
-            >
-              <img src="@/assets/icons/approved.png" alt="" />
+          </router-link>
+          <router-link to="">
+            <div class="flex flex-col items-center gap-y-2">
+              <div
+                class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
+              >
+                <img src="@/assets/icons/approved.png" alt="" />
+              </div>
+              <div class="text-sm text-center w-14">Stock Check</div>
             </div>
-            <div class="text-sm text-center w-14">Stock Check</div>
-          </div>
-        
+          </router-link>
         </div>
       </div>
     </div>
