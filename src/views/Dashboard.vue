@@ -1,6 +1,6 @@
 <template>
   <div
-    class="justify-center pt-20 md:flex md:flex-col lg:flex-row lg:h-screen md:justify-evenly"
+    class="justify-center pt-20 md:flex md:flex-col lg:flex-row lg:h-auto md:justify-evenly"
   >
     <div class="flex flex-col items-center w-full my-3 lg:w-1/3">
       <div
@@ -11,7 +11,7 @@
         <div
           class="grid md:pl-12 lg:pl-2 md:gap-24 lg:gap-3 md:grid-cols-5 lg:grid-cols-3"
         >
-          <router-link to="/datacupture">
+          <router-link to="/datacapture">
             <div class="flex flex-col items-center gap-y-2">
               <div
                 class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
@@ -31,7 +31,7 @@
               <div class="text-sm text-center w-14">Stock Search</div>
             </div>
           </router-link>
-          <router-link to="/">
+          <router-link to="/parts">
             <div class="flex flex-col items-center gap-y-2">
               <div
                 class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"
@@ -51,7 +51,7 @@
               <div class="text-sm text-center w-14">Label Printing</div>
             </div>
           </router-link>
-          <router-link to="/">
+          <router-link to="/delivery">
             <div class="flex flex-col items-center gap-y-2">
               <div
                 class="flex items-center justify-center w-24 h-24 bg-gray-100 rounded-2xl"

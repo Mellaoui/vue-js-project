@@ -3,8 +3,13 @@
     <div id="nav" class="fixed top-0 z-10 flex w-screen py-3 bg-gray-300">
       <div id="desktop-navigation" class="justify-around hidden w-full lg:flex">
         <router-link class="hidden px-12 text-white sm:hidden lg:block" to="/"
-          >Home</router-link
+          >
+          <svg width="120" height="20.25" fill="#ffffff" viewBox="394.5 418.584 212 206.25" xml:space="preserve"><path d="m600.116 503.301-88.955-77.062a3.982 3.982 0 0 0-1.059-.639c-5.693-4.32-13.557-4.119-19.049.639l-88.956 77.053c-6.376 5.519-7.181 15.313-1.784 21.839 3.411 4.128 9.069 4.075 13.408 3.2v82.834c0 6.253 5.02 11.344 11.195 11.344h53.586a4.376 4.376 0 0 0 4.374-4.373v-72.242h36.471v72.242a4.375 4.375 0 0 0 4.372 4.373h53.587c6.175 0 11.195-5.091 11.195-11.344v-82.834c4.355.857 9.996.919 13.407-3.2 5.389-6.525 4.584-16.329-1.792-21.83zm-4.95 16.25c-.9 1.058-5.563.48-9.288-1.146a4.366 4.366 0 0 0-4.146.351 4.382 4.382 0 0 0-1.985 3.655v88.746c0 1.435-1.103 2.598-2.449 2.598h-49.214v-72.242a4.374 4.374 0 0 0-4.373-4.373h-45.217a4.374 4.374 0 0 0-4.373 4.373v72.242h-49.214c-1.347 0-2.449-1.163-2.449-2.598V522.41a4.365 4.365 0 0 0-1.985-3.664 4.461 4.461 0 0 0-4.155-.342c-3.306 1.461-8.334 2.283-9.279 1.138-2.388-2.887-2.046-7.207.77-9.647l88.956-77.061a6.374 6.374 0 0 1 8.388 0c.314.28.674.507 1.05.674l88.186 76.405c2.824 2.431 3.164 6.751.777 9.638z"/></svg>
+          </router-link
         >
+        <router-link class="hidden px-12 text-white sm:hidden lg:block">
+          <svg  width="138" height="20"><defs><linearGradient y2="0" x2="0" y1="1" x1="0" id="a"><stop stop-color="#ffffff" offset="0%"/><stop stop-color="#ffffff" offset="100%"/></linearGradient></defs><path transform="matrix(3.8 0 0 3.8 8.2 8.2)" d="M16 30.534c8.027 0 14.534-6.507 14.534-14.534 0-8.027-6.507-14.534-14.534-14.534C7.973 1.466 1.466 7.973 1.466 16c0 8.027 6.507 14.534 14.534 14.534Zm2.335-24.258 3.536 3.538-6.187 6.187 6.187 6.187-3.536 3.537-9.723-9.724 9.723-9.725Z" fill="url(#a)" style="opacity:1;fill-opacity:1"/></svg>
+        </router-link>
         <div class="px-12 text-white" to="/"></div>
         <router-link
           class="hidden px-12 text-white sm:block lg:hidden"
@@ -12,7 +17,7 @@
           >logout</router-link
         >
         <router-link class="hidden px-12 text-white lg:block" to="/about"
-          >About</router-link
+          >Logout</router-link
         >
       </div>
 

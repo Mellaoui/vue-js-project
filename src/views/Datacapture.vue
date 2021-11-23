@@ -6,15 +6,15 @@
       <div
         class="inline-flex w-full h-10 px-4 pt-2 text-sm leading-none text-gray-600 bg-white rounded-full shadow sm:hidden justify-evenly sm:items-center sm:w-2/3 text-teal"
       >
-        <div><p class="font-medium">Active</p></div>
-        <div><p>Active</p></div>
+        <div class="px-5 py-3 rounded-full" @click="WorkTab = 'active'" :class="WorkTab == 'active' ? 'bg-green-600 text-white' : ''"><p class="">Active Work</p></div>
+        <div class="px-5 py-3 rounded-full" @click="WorkTab = 'schedule'" :class="WorkTab == 'schedule' ? 'bg-green-600 text-white' : ''"><p class="">Scheduled Work</p></div>
       </div>
       <div class="flex flex-row w-full sm:justify-evenly">
         <input
           type="text"
           class="inline-flex w-full h-10 px-4 pt-2 mt-12 text-sm leading-none text-pink-600 bg-white rounded-full shadow sm:items-center sm:w-2/3 text-teal"
         />
-        <router-link class="hidden sm:block" to="/datacupture">
+        <router-link class="hidden sm:block" to="/datacapture">
           <div class="flex flex-col items-center gap-y-2">
             <div
               class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
@@ -64,9 +64,9 @@
       </div>
     </div>
     <div
-      class="flex flex-row w-full border rounded-t-lg justify-evenly sm:hidden border-sm rounded-t-3xl bg-gray-50"
+      class="flex flex-row w-full border justify-evenly sm:hidden border-sm rounded-t-3xl bg-gray-50"
     >
-      <router-link to="/datacupture">
+      <router-link to="/datacapture">
         <div class="flex flex-col items-center gap-y-2">
           <div
             class="flex items-center justify-center w-24 h-24 bg-red-400 rounded-2xl"
@@ -91,6 +91,11 @@
 </template>
 <script>
 export default {
-  name: "datacupture",
+  name: "Datacapture",
+  data: function () {
+    return {
+      WorkTab: "active",
+    };
+  },
 };
 </script>

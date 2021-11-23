@@ -1,7 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Datacupture from "../views/Datacupture";
+import Datacapture from "../views/Datacapture";
+import Parts from "../views/Parts.vue";
+import Partfinder from "../views/Partfinder.vue";
+import Delivery from "../views/Delivery.vue";
 
 Vue.use(VueRouter);
 
@@ -12,9 +15,24 @@ const routes = [
     component: Dashboard,
   },
   {
-    path: "/datacupture",
-    name: "datacupture",
-    component: Datacupture,
+    path: "/datacapture",
+    name: "Datacapture",
+    component: Datacapture,
+  },
+  {
+    path: "/parts",
+    name: "Parts",
+    component: Parts,
+  },
+  {
+    path: "/partfinder",
+    name: "Partfinder",
+    component: Partfinder,
+  },
+  {
+    path: "/delivery",
+    name: "Delivery",
+    component: Delivery,
   },
   {
     path: "/about",
